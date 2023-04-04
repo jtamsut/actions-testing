@@ -1,0 +1,13 @@
+name: |
+  Docker: Build & Push Image
+on:
+  pull_request: null
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: This is more stuff to do yeah!!!!!!!!!!!!
+        run: echo What is up!!!!!!
