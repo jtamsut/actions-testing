@@ -1,5 +1,6 @@
 {
     "github-actions.workflows.pinned.workflows": [
-        ".github/workflows/test2_workflow.yml"
+        ".github/workflows/test2_workflow.yml",
+        ".github/workflows/test3_workflow.yml"
     ]
 }
