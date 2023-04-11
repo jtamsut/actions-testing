@@ -5,4 +5,6 @@ jobs:
   do-stuff:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "I have run!"
+      - name: Running index
+        working-directory:  ./../src
+        run: node index.js
