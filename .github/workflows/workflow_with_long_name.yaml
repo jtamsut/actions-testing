@@ -1,8 +1,0 @@
-name: This is a really long workflow name that will probably get cut off somehow...Lets see?
-on:
-  workflow_dispatch:
-jobs:
-  do-stuff:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "I have run!"
