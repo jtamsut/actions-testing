@@ -5,6 +5,5 @@ jobs:
   do-stuff:
     runs-on: ubuntu-latest
     steps:
-      - name: Running index
-        working-directory:  src
-        run: node index.js
+      - name: Saying Hi
+        run: echo "Hello World!"
