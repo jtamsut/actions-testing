@@ -1,7 +1,8 @@
 # Actions Testing
 
-This repository is used for testing GitHub Actions.
+Hello, 👋! This repository is a place where I play around with GitHub Actions.
 
-Adding this for testing
+## Useful Links
 
-And another one
+- [Learn GitHub Actions Official Documentation](https://docs.github.com/en/actions/learn-github-actions)
+- [Working with GitHub Actions](https://jeffrafter.com/working-with-github-actions/)
