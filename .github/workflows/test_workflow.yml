@@ -1,9 +1,9 @@
-name: Test Workflow
+name: Simple Workflow
 on:
-  workflow_dispatch:
+  workflow_dispatch
 jobs:
-  do-stuff:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Saying Hi
-        run: echo "Hello World!"
+        - name: Do something really fun!
+          run: echo Meoowwwww
