@@ -3,13 +3,13 @@ on:
   workflow_dispatch
 
 env:
-  RUN_HELLO_STEP: true
+  RUN_STEP_TWO: false
 jobs:
   initialization:
     runs-on: ubuntu-latest
     steps:
-      - name: "Initialization step"
-        run: echo Initializing!
-      - name: "Hello step"
-        run: echo Hello
-        if: ${{ env.RUN_HELLO_STEP }}
+      - name: "Step 1"
+        run: echo "This is step 1"
+      - name: "Step 2"
+        run: echo "This is step 2"
+        if: env.RUN_STEP_TWO == 'true'
