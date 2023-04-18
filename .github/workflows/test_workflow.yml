@@ -3,7 +3,7 @@ on:
   workflow_dispatch
 
 env:
-  RUN_HELLO_STEP: false
+  RUN_HELLO_STEP: true
 jobs:
   initialization:
     runs-on: ubuntu-latest
