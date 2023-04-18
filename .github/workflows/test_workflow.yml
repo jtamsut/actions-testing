@@ -1,9 +1,15 @@
-name: Simple Workflow
+name: Per Environment Workflow
 on:
   workflow_dispatch
+
+env:
+  RUN_HELLO_STEP: false
 jobs:
-  build:
+  initialization:
     runs-on: ubuntu-latest
     steps:
-        - name: Do something really fun!
-          run: echo Meoowwwww
+      - name: "Initialization step"
+        run: echo Initializing!
+      - name: "Hello step"
+        run: echo Hello
+        if: env.RUN_HELLO_STEP

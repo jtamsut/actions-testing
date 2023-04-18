@@ -13,4 +13,3 @@ jobs:
                   node-version: 18.x
             - name: Run JavaScript file
               run: node src/index.js
-            
