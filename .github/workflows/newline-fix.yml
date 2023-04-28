@@ -4,9 +4,9 @@ name: |
     C
     D
 on:
-  workflow_dispatch:
+    workflow_dispatch:
 jobs:
-  do-stuff:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "I have run!"
+    do-stuff:
+        runs-on: ubuntu-latest
+        steps:
+        - run: echo "I have run!"
