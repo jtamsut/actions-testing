@@ -1,0 +1,8 @@
+name: Failing Job
+on: workflow_dispatch
+jobs:
+  initialization:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Failing job
+        run: exit(1)
