@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Failing job
-        run: exit 1
+        run: exit 1  
       - name: Second stop
-        run: Woo wee!
+        run: echo "Woo wee!"
