@@ -1,5 +1,5 @@
 name: Failing Job
-on: [workflow_dispatch, pull_request]
+on: [workflow_dispatch, pull_request, push]
 jobs:
   job-one:
     runs-on: ubuntu-latest
