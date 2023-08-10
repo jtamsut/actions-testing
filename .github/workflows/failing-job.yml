@@ -1,8 +1,11 @@
 name: Failing Job
 on: [workflow_dispatch, pull_request]
 jobs:
-  initialization:
+  job-one:
     runs-on: ubuntu-latest
     steps:
       - run: echo "first"
+  retry-job-two:
+    runs-on: ubuntu-latest
+    steps:
       - run: exit 1
