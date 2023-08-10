@@ -5,7 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "first"
-  retry-job-two:
+  job-two:
     runs-on: ubuntu-latest
+    needs: job-one
     steps:
-      - run: exit 1
+      - run: echo "second" && exit 1
+  retry-three:
+    runs-on: ubuntu-latest
+    needs: job-two
+    steps:
+      - run: echo "third"
