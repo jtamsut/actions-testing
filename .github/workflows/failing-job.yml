@@ -4,7 +4,5 @@ jobs:
   initialization:
     runs-on: ubuntu-latest
     steps:
-      - name: Failing job
-        run: exit 1  
-      - name: Second stop
-        run: echo "Woo wee!"
+      - run: exit 1
+      - run: echo "ASDASD"
