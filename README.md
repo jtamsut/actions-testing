@@ -1,6 +1,6 @@
 # Actions Testing
 
-Hello, 👋! This repository is a place where I play around with GitHub Actions.
+Hello, 👋! This repository is a place where I play around with GitHub Actions. 💃
 
 ## Useful Links
 
