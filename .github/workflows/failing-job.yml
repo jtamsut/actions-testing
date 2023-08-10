@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: job-one
     steps:
-      - run: echo "second" && exit 1
+      - run: echo "second"
   retry-three:
     runs-on: ubuntu-latest
     needs: job-two
