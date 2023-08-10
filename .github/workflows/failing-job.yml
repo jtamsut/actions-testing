@@ -7,4 +7,4 @@ jobs:
       - name: Failing job
         run: exit 1
       - name: Second stop
-      - run: Woo wee!
+        run: Woo wee!
