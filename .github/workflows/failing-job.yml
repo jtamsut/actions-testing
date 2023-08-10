@@ -1,8 +1,10 @@
 name: Failing Job
-on: workflow_dispatch
+on: [workflow_dispatch, pull_request]
 jobs:
   initialization:
     runs-on: ubuntu-latest
     steps:
       - name: Failing job
-        run: exit(1)
+        run: exit 1
+      - name: Second stop
+      - run: Woo wee!
