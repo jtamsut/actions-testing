@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "first"
-      - run: echo "ASDASD"
+      - run: exit 1
