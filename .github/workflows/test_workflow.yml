@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Going to sleep
-        run: sleep(5)
+        run: sleep 5s
       - name: Step 2
-        run: echo This is step 2
+        run: echo This is step 2 asdjhaskldjaslkjdlkasjdlkasjdlksajldkasjdklasjds
