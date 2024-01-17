@@ -4,7 +4,7 @@ jobs:
   initialization:
     runs-on: ubuntu-latest
     steps:
-      - name: "URL Testing"
-        run: echo "https://ge.solutions-team.gradle.com/s/gywweox2morvm/timeline?outcome=success,failed&sort=longest"
-      - name: "Step 2"
-        run: echo "This is step 2"
+      - name: Going to sleep
+        run: sleep(5)
+      - name: Step 2
+        run: echo This is step 2
