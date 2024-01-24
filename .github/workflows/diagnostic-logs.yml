@@ -1,0 +1,16 @@
+name: Testing Diagnostic Logs
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      ACTIONS_RUNNER_DEBUG: true
+
+    steps:
+    - name: Run a one-line script
+      run: echo Hello, world!
+    - name: Run another script
+      run: echo Second step!
