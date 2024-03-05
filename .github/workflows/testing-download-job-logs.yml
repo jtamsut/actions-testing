@@ -1,0 +1,19 @@
+name: Testing Download Job Workflow
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions: 
+      actions: read
+    steps:
+      - name: Get Job ID from GH API
+        id: get-job-id
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          jobs=$(gh api repos/${{ github.repository }}/actions/runs/${{ github.run_id}}/attempts/${{ github.run_attempt }}/jobs)
+          job_id=$(echo $jobs | jq -r '.jobs[0].id')
+          echo "job-id=$job_id" >> $GITHUB_OUTPUT
+
+      - run: echo "This is job ${{ steps.get-job-id.outputs.job-id }} from workflow run ${{ github.run_id }} attempt ${{ github.run_attempt }}"
